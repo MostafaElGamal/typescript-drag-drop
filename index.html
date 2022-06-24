@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Project Mangment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <h3 class="main-header__title">Manage Your Projects</h3>
+    </header>
+    <div class="container">
+      <form class="add-project">
+        <input type="text" class="add-project__input" />
+        <button class="add-project__btn" type="submit">
+          <img src="/asset/images/Vector.svg" alt="" />
+        </button>
+      </form>
+      <section class="projects">
+        <div class="projects__project-holder">
+          <h5 class="projects__project-title">Active Projects</h5>
+          <ul class="projects__list projects__list--active">
+            <li class="project-item">
+              <p class="project-item__text">Project Name</p>
+              <button class="project-item__btn">
+                <img src="/asset/images/Vector (1).svg" alt="" />
+              </button>
+            </li>
+            <li class="project-item">
+              <p class="project-item__text">Project Name</p>
+              <button class="project-item__btn">
+                <img src="/asset/images/Vector (1).svg" alt="" />
+              </button>
+            </li>
+            <li class="project-item">
+              <p class="project-item__text">Project Name</p>
+              <button class="project-item__btn">
+                <img src="/asset/images/Vector (1).svg" alt="" />
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="projects__project-holder">
+          <h5 class="projects__project-title">Finished Projects</h5>
+          <ul class="projects__list projects__list--finished">
+            <li class="project-item">
+              <p class="project-item__text">Project Name</p>
+              <button class="project-item__btn">
+                <img src="/asset/images/Vector (2).svg" alt="" />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
