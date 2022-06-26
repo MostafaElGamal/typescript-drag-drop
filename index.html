@@ -14,50 +14,41 @@
     <header class="main-header">
       <h3 class="main-header__title">Manage Your Projects</h3>
     </header>
-    <div class="container">
-      <form class="add-project">
+    <template id="project_item">
+      <li class="project-item">
+        <p class="project-item__text"></p>
+        <button class="project-item__btn">
+          <img src="/asset/images/Vector (1).svg" alt="" />
+          <!-- <img src="/asset/images/Vector (2).svg" alt="" /> -->
+        </button>
+      </li>
+    </template>
+    <template id="project_form">
+      <form class="add-project" id="add_project_form">
         <input type="text" class="add-project__input" />
         <button class="add-project__btn" type="submit">
           <img src="/asset/images/Vector.svg" alt="" />
         </button>
       </form>
-      <section class="projects">
+    </template>
+    <template id="projects">
+      <div class="projects">
         <div class="projects__project-holder">
           <h5 class="projects__project-title">Active Projects</h5>
-          <ul class="projects__list projects__list--active">
-            <li class="project-item">
-              <p class="project-item__text">Project Name</p>
-              <button class="project-item__btn">
-                <img src="/asset/images/Vector (1).svg" alt="" />
-              </button>
-            </li>
-            <li class="project-item">
-              <p class="project-item__text">Project Name</p>
-              <button class="project-item__btn">
-                <img src="/asset/images/Vector (1).svg" alt="" />
-              </button>
-            </li>
-
-            <li class="project-item">
-              <p class="project-item__text">Project Name</p>
-              <button class="project-item__btn">
-                <img src="/asset/images/Vector (1).svg" alt="" />
-              </button>
-            </li>
-          </ul>
+          <ul
+            class="projects__list projects__list--active"
+            id="active_projects"
+          ></ul>
         </div>
         <div class="projects__project-holder">
           <h5 class="projects__project-title">Finished Projects</h5>
-          <ul class="projects__list projects__list--finished">
-            <li class="project-item">
-              <p class="project-item__text">Project Name</p>
-              <button class="project-item__btn">
-                <img src="/asset/images/Vector (2).svg" alt="" />
-              </button>
-            </li>
-          </ul>
+          <ul
+            class="projects__list projects__list--finished"
+            id="finished_projects"
+          ></ul>
         </div>
-      </section>
-    </div>
+      </div>
+    </template>
+    <div id="app" class="container"></div>
   </body>
 </html>

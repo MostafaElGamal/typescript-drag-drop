@@ -11,7 +11,7 @@ const stylesHandler = isProduction
   : "style-loader";
 
 const config = {
-  entry: ["./src/index.ts", "./asset/style.css"],
+  entry: ["./src/app.ts", "./asset/style.css"],
   output: {
     path: path.resolve(__dirname, "dist"),
   },
