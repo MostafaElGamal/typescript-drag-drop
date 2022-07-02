@@ -18,6 +18,7 @@ function AutoBind(
     },
   };
 }
+
 export class Project extends Component<HTMLLIElement> implements DragableItem {
   project: ProjectInterface;
 
@@ -64,12 +65,11 @@ export class Project extends Component<HTMLLIElement> implements DragableItem {
 
   @AutoBind
   onDragStart(e: DragEvent): void {
-    e.dataTransfer.setData("text", this.project.id.toString());
+    e.dataTransfer.setData("projectId", this.project.id.toString());
+    e.dataTransfer.setData("projectStatus", this.project.status.toString());
   }
 
-  onDragEnd(e: DragEvent): void {
-    console.log(e, "DragEnd");
-  }
+  onDragEnd(e: DragEvent): void {}
 
   renderConfig(): void {
     const pElement = this.element.querySelector("p");

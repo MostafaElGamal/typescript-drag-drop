@@ -1,3 +1,4 @@
+import { AppIdsEnum } from "./../enums/AppIds.enum";
 import { ProjectStatusEnum } from "./../enums/ProjectStatus.enum";
 import { Project } from "./Project";
 
@@ -31,6 +32,14 @@ class ProjectsState {
       }
       return prj;
     });
+    const selectedProjectList =
+      status == ProjectStatusEnum.active
+        ? AppIdsEnum.activeProject
+        : AppIdsEnum.finishedProjects;
+    console.log(selectedProjectList);
+    document
+      .getElementById(selectedProjectList)
+      .appendChild(document.getElementById(projectId.toString()));
   }
 }
 

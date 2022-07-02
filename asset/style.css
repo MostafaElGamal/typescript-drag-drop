@@ -60,7 +60,6 @@ body {
   background: linear-gradient(0deg, #ffffff, #ffffff), #ffffff;
   border: 1px solid #7cc259;
   width: 48%;
-  min-height: 200px;
 }
 .projects__project-holder:nth-child(2) {
   border: 1px solid #d16969;
@@ -81,6 +80,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 1.5rem;
+  min-height: 200px;
 }
 .project-item {
   display: flex;
