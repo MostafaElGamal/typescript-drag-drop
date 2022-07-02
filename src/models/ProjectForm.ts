@@ -1,7 +1,8 @@
+import { projectsState } from "./ProjectState";
 import { AppIdsEnum } from "../enums/AppIds.enum";
 import { Component } from "./Componnet";
 
-export class ProjectForm extends Component {
+export class ProjectForm extends Component<HTMLFormElement> {
   constructor() {
     super(AppIdsEnum.projectForm, AppIdsEnum.app);
 
@@ -14,6 +15,10 @@ export class ProjectForm extends Component {
       .getElementById(AppIdsEnum.addProjectForm)
       .addEventListener("submit", (e: Event) => {
         e.preventDefault();
+        const form = <HTMLFormElement>e.target;
+        const projectName = form.querySelector("input")!.value;
+        projectsState.createProject(projectName);
+        form.reset();
       });
   }
 }

@@ -52,6 +52,7 @@ body {
 .projects {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin: 0 auto;
   padding-bottom: 3rem;
 }
@@ -59,6 +60,7 @@ body {
   background: linear-gradient(0deg, #ffffff, #ffffff), #ffffff;
   border: 1px solid #7cc259;
   width: 48%;
+  min-height: 200px;
 }
 .projects__project-holder:nth-child(2) {
   border: 1px solid #d16969;

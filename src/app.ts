@@ -1,5 +1,5 @@
-import { Projects } from "./models/Projects";
+import { ProjectsList } from "./models/ProjectsList";
 import { ProjectForm } from "./models/ProjectForm";
 
 new ProjectForm();
-new Projects();
+new ProjectsList();
